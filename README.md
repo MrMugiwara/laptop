@@ -40,9 +40,7 @@ time, then press `return` after each one. The first two commands download the
 files the script needs to run, and the third command executes the script.
 
 ```sh
-curl --remote-name https://raw.githubusercontent.com/monfresh/laptop/master/mac
-curl --remote-name https://raw.githubusercontent.com/monfresh/laptop/master/Brewfile
-bash mac 2>&1 | tee ~/laptop.log && source ~/.rvm/scripts/rvm
+curl -s https://raw.githubusercontent.com/monfresh/laptop/master/laptop | sh -
 ```
 
 The [script](https://github.com/monfresh/laptop/blob/master/mac) itself is
